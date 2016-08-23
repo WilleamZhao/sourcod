@@ -3,3 +3,7 @@
 *.lisp-temp
 .idea/
 target/
+sourcod.iml
+profiles.xml
+
+
