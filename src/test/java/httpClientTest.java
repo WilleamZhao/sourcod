@@ -14,9 +14,10 @@ import java.io.InputStream;
  */
 public class httpClientTest {
     public static void main(String[] args) {
-        String url = "http://www.infoq.com/cn/bigdata/?utm_source=infoq&utm_medium=header_graybar&utm_campaign=topic_clk";
+        // String url = "http://www.infoq.com/cn/bigdata/?utm_source=infoq&utm_medium=header_graybar&utm_campaign=topic_clk";
+        String alimamaUrl = "http://pub.alimama.com/promo/item/channel/index.htm?spm=a219t.7664554.1998457203.60.iV2dXF&channel=nzjh";
         HttpClient hc = new DefaultHttpClient();
-        HttpGet hg = new HttpGet(url);
+        HttpGet hg = new HttpGet(alimamaUrl);
         HttpResponse response = null;
         try {
             response = hc.execute(hg);
