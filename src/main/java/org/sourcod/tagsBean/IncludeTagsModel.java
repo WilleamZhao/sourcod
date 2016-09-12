@@ -11,5 +11,5 @@ public class IncludeTagsModel {
     private String id;
     private String type;
     private String url;
-    
+
 }
