@@ -1,28 +1,26 @@
-package org.sourcod.tags;
+package org.sourcod.tag;
 
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.tagext.TagSupport;
-import java.io.IOException;
 
 /**
- * GridTags
+ * IncludeTags
  *
  * @author willeam
- * @time 16-08-26 下午3:53
- * @version 0.0.1
+ * @time 16-9-5 上午10:20
  */
-public class GridTags extends TagSupport {
+public class IncludeTags extends TagSupport{
+
+    private String id;
+    private String name;
+    private String style;
 
     @Override
     public int doStartTag() throws JspException {
         JspWriter out = this.pageContext.getOut();
-        try {
-            out.println("aaa");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return SKIP_BODY;
+
+        return super.doStartTag();
     }
 
     @Override
@@ -34,9 +32,4 @@ public class GridTags extends TagSupport {
     public int doAfterBody() throws JspException {
         return super.doAfterBody();
     }
-
-    public static void main(String[] args) {
-        System.out.println();
-    }
-
 }

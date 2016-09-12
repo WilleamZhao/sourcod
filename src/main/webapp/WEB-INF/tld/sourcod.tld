@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN" "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+<taglib>
+    <!-- description用来添加对taglib(标签库)的描述 -->
+    <description>sourcodTags</description>
+    <!--taglib(标签库)的版本号 -->
+    <tlib-version>1.0</tlib-version>
+    <short-name>sourocdTags</short-name>
+    <jsp-version>2.0</jsp-version>
+    <!--
+    为自定义标签库设置一个uri，uri以/开头，/后面的内容随便写，如这里的/gacl ，
+    在Jsp页面中引用标签库时，需要通过uri找到标签库
+    在Jsp页面中就要这样引入标签库：<%@taglib uri="/gacl" prefix="gacl"%>
+    -->
+    <uri>http://tags.sourcod.com</uri>
+
+    <!-- 一个taglib(标签库)中包含多个自定义标签，每一个自定义标签使用一个tag标记来描述 -->
+    <!-- 一个tag标记对应一个自定义标签 -->
+    <tag>
+        <description>栅格标签</description>
+        <!--
+        为标签处理器类配一个标签名，在Jsp页面中使用标签时是通过标签名来找到要调用的标签处理器类的
+        通过viewIP就能找到对应的me.gacl.web.tag.ViewIPTag类
+        -->
+        <name>grid</name>
+
+        <!-- 标签对应的处理器类-->
+        <tag-class>org.sourcod.tag.IncludeTags</tag-class>
+
+        <body-content>JSP</body-content>
+
+        <attribute>
+            <name>id</name>
+            <!-- 备注 -->
+            <description>ID</description>
+            <!-- 是否必填 -->
+            <required>false</required>
+            <!-- 指定属性是否能接受请求时表达式的值 -->
+            <rtexprvalue>true</rtexprvalue>
+            <!-- 返回值类型 -->
+            <type>java.lang.String</type>
+        </attribute>
+
+        <attribute>
+            <name>type</name>
+            <description>类型</description>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>src</name>
+            <description>目录</description>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+
+        <attribute>
+            <name>charset</name>
+            <description>编码方式</description>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+
+        <attribute>
+            <name>language</name>
+            <description>高度</description>
+            <type>java.lang.Integer</type>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+
+        <attribute>
+            <name>class</name>
+            <description>外联样式</description>
+            <type>java.lang.String</type>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+
+        <attribute>
+            <name>style</name>
+            <description>内嵌样式</description>
+            <type>java.lang.String</type>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+
+        <attribute>
+            <name>parentId</name>
+            <description>父标签</description>
+            <type>java.lang.String</type>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <!-- 引用标签 -->
+    <tag>
+        <description>引用标签</description>
+        <!--
+        为标签处理器类配一个标签名，在Jsp页面中使用标签时是通过标签名来找到要调用的标签处理器类的
+        通过viewIP就能找到对应的me.gacl.web.tag.ViewIPTag类
+        -->
+        <name>grid</name>
+
+        <!-- 标签对应的处理器类-->
+        <tag-class>org.sourcod.tag.IncludeTags</tag-class>
+
+        <body-content>JSP</body-content>
+
+        <attribute>
+            <name>id</name>
+            <!-- 备注 -->
+            <description>ID</description>
+            <!-- 是否必填 -->
+            <required>false</required>
+            <!-- 指定属性是否能接受请求时表达式的值 -->
+            <rtexprvalue>true</rtexprvalue>
+            <!-- 返回值类型 -->
+            <type>java.lang.String</type>
+        </attribute>
+
+        <attribute>
+            <name>type</name>
+            <description>类型</description>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>src</name>
+            <description>目录</description>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+
+        <attribute>
+            <name>charset</name>
+            <description>编码方式</description>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+
+        <attribute>
+            <name>language</name>
+            <description>高度</description>
+            <type>java.lang.Integer</type>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+
+        <attribute>
+            <name>class</name>
+            <description>外联样式</description>
+            <type>java.lang.String</type>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+
+        <attribute>
+            <name>style</name>
+            <description>内嵌样式</description>
+            <type>java.lang.String</type>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+
+        <attribute>
+            <name>parentId</name>
+            <description>父标签</description>
+            <type>java.lang.String</type>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>栅格标签</description>
+        <!--
+        为标签处理器类配一个标签名，在Jsp页面中使用标签时是通过标签名来找到要调用的标签处理器类的
+        通过viewIP就能找到对应的me.gacl.web.tag.ViewIPTag类
+        -->
+        <name>grid</name>
+
+        <!-- 标签对应的处理器类-->
+        <tag-class>org.sourcod.tag.ContainerTags</tag-class>
+
+        <body-content>JSP</body-content>
+
+        <!--<attribute>-->
+        <!--<name>user</name>-->
+        <!--是否必填 -->
+        <!--<required>false</required>-->
+        <!--指定属性是否能接受请求时表达式的值 -->
+        <!--<rtexprvalue>true</rtexprvalue>-->
+        <!--返回值类型 -->
+        <!--<type>java.lang.String</type>-->
+        <!--</attribute>-->
+
+        <attribute>
+            <name>name</name>
+            <description>名称</description>
+            <type>java.lang.String</type>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>id</name>
+            <description>ID</description>
+            <type>java.lang.String</type>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+
+        <attribute>
+            <name>width</name>
+            <description>宽度</description>
+            <type>java.lang.Integer</type>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+
+        <attribute>
+            <name>helght</name>
+            <description>高度</description>
+            <type>java.lang.Integer</type>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+
+        <attribute>
+            <name>class</name>
+            <description>外联样式</description>
+            <type>java.lang.String</type>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+
+        <attribute>
+            <name>style</name>
+            <description>内嵌样式</description>
+            <type>java.lang.String</type>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+
+        <attribute>
+            <name>parentId</name>
+            <description>父标签</description>
+            <type>java.lang.String</type>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <!-- 图片标签 -->
+
+    <!-- 按钮标签 -->
+
+    <!--  -->
+
+    <!--  -->
+</taglib>

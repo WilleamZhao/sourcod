@@ -6,10 +6,10 @@
         version="2.1">
     <tlib-version>2.0</tlib-version>
     <!-- description用来添加对taglib(标签库)的描述 -->
-    <description>gridTags</description>
+    <description>containerTags</description>
     <!--taglib(标签库)的版本号 -->
     <tlib-version>1.0</tlib-version>
-    <short-name>gridTags</short-name>
+    <short-name>containerTags</short-name>
     <!--
     为自定义标签库设置一个uri，uri以/开头，/后面的内容随便写，如这里的/gacl ，
     在Jsp页面中引用标签库时，需要通过uri找到标签库
@@ -28,19 +28,19 @@
         <name>grid</name>
 
         <!-- 标签对应的处理器类-->
-        <tag-class>org.sourcod.tag.GridTags</tag-class>
+        <tag-class>org.sourcod.tag.ContainerTags</tag-class>
 
         <body-content>empty</body-content>
 
-        <attribute>
-            <name>user</name>
-            <!-- 是否必填 -->
-            <required>false</required>
-            <!-- 指定属性是否能接受请求时表达式的值 -->
-            <rtexprvalue>true</rtexprvalue>
-            <!-- 返回值类型 -->
-            <type>java.lang.String</type>
-        </attribute>
+        <!--<attribute>-->
+            <!--<name>user</name>-->
+             <!--是否必填 -->
+            <!--<required>false</required>-->
+             <!--指定属性是否能接受请求时表达式的值 -->
+            <!--<rtexprvalue>true</rtexprvalue>-->
+             <!--返回值类型 -->
+            <!--<type>java.lang.String</type>-->
+        <!--</attribute>-->
 
         <attribute>
             <name>name</name>
@@ -85,14 +85,6 @@
         <attribute>
             <name>style</name>
             <description>内嵌样式</description>
-            <type>java.lang.String</type>
-            <required>false</required>
-            <rtexprvalue>true</rtexprvalue>
-        </attribute>
-
-        <attribute>
-            <name>parentId</name>
-            <description>父标签</description>
             <type>java.lang.String</type>
             <required>false</required>
             <rtexprvalue>true</rtexprvalue>
