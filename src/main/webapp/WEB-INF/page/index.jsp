@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta keywork=""/>
+<script>
     <title>Title</title>
 </head>
 <body>

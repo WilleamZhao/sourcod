@@ -11,13 +11,19 @@ import java.io.IOException;
  *
  * @author willeam
  * @time 16-08-26 下午3:53
- * @version 0.0.1
- */
+  */
 public class GridTags extends TagSupport implements Tag {
+
+    private static final long serialVersionUID = -5894728553956505651L;
 
     @Override
     public int doStartTag() throws JspException {
-        JspWriter out = this.pageContext.getOut();
+        JspWriter out = null;
+        out = this.pageContext.getOut();
+        StringBuffer sb = new StringBuffer();
+
+
+        sb.append("");
         try {
             out.println("aaa");
         } catch (IOException e) {

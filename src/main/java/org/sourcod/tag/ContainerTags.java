@@ -10,6 +10,14 @@ import javax.servlet.jsp.tagext.TagSupport;
  * @time 16-9-4 下午7:09
  */
 public class ContainerTags extends TagSupport {
+
+    private static final long serialVersionUID = -379016874839380620L;
+
+    private String SCName;
+    private String SCId;
+    private String SCContainer;
+    private String SCClass;
+
     @Override
     public int doStartTag() throws JspException {
         return super.doStartTag();

@@ -67,7 +67,7 @@
         </attribute>
 
         <attribute>
-            <name>helght</name>
+            <name>height</name>
             <description>高度</description>
             <type>java.lang.Integer</type>
             <required>false</required>
