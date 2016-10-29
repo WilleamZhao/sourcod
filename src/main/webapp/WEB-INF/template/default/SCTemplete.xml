@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
     <name></name>
     <id></id>
     <description></description>
     <author></author>
-    <
+    <layout position="">
+        
+
+    </layout>
 </properties>
