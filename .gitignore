@@ -1,9 +1,19 @@
 *.FASL
+
 *.fasl
+
 *.lisp-temp
+
 .idea/
+
 target/
+
 sourcod.iml
+
 profiles.xml
 
 
+
+.settings/
+.classpath
+.project
